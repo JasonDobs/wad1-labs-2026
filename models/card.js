@@ -4,8 +4,9 @@ import logger from '../utils/logger.js';
 import JsonStore from "./json-store.js";
 const cardStore = {
 
-    store: new JsonStore('./models/card.json',{employee: {} }),
-    collection: 'employee',
+    store: new JsonStore('./models/card.json',{employees: [] }),
+    collection: 'employees',
+    array: 'employees',
 
 
     getAppInfo() {

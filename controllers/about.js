@@ -10,9 +10,9 @@ const about = {
 
         const viewData = {
             title: "Playlist App About page",
-            employee:cardStore.getAppInfo()
+            employees:cardStore.getAppInfo()
         };
-logger.info(viewData.employee)
+logger.info(viewData.employees)
         response.render('about', viewData);
     },
 };
