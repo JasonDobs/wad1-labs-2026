@@ -1,4 +1,4 @@
-{{#if singlePlaylist.songs}}
+{{#if songs}}
 
     <table class="ui unstackable striped table">
         <thead>
@@ -8,7 +8,7 @@
         </tr>
         </thead>
         <tbody>
-        {{#each singlePlaylist.songs}}
+        {{#each songs}}
             <tr>
                 <td>
                     {{title}}
@@ -20,10 +20,5 @@
         {{/each}}
         </tbody>
     </table>
-
-{{else}}
-    <h3 class="ui message">
-        Empty playlist!
-    </h3>
 
 {{/if}}

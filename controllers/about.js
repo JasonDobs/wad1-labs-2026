@@ -1,7 +1,7 @@
 'use strict';
 
 import logger from "../utils/logger.js";
-import cardStore from "../models/card.js"
+import cardStore from "../models/card.js";
 
 
 const about = {
