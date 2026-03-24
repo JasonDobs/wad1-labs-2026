@@ -5,7 +5,7 @@ import express from 'express';
 const router= express.Router();
 
 
-
+import stats from './controllers/stats.js';
 import start from './controllers/start.js';
 import dashboard from './controllers/dashboard.js';
 import about from './controllers/about.js';
@@ -20,6 +20,11 @@ router.post('/playlist/:id/addsong', playlist.addSong);
 router.post('/dashboard/addplaylist', dashboard.addPlaylist);
 router.get('/playlist/:id/deletesong/:songid', playlist.deleteSong);
 router.get('/dashboard/deleteplaylist/:id', dashboard.deletePlaylist);
+router.post('/playlist/:id/updatesong/:songid', playlist.updateSong);
+router.get('/stats', stats.createView);
+router.get('/searchCategory', dashboard.createView);
+router.get('/sortData', dashboard.createView);
+
 
 
 export default router;
