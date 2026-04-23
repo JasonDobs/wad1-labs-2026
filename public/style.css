@@ -12,13 +12,7 @@ body {
     margin: 2em;
     background-color: lightgrey;
 }
-.editSubmit {
-    border:none;
-    background: none;
-}
-.hide{
-    display: none;
-}
+
 
 table {
     margin:auto
@@ -43,4 +37,10 @@ table {
     border-radius: 6px;
     width: 200px;
 }
-
+.editSubmit {
+    border:none;
+    background: none;
+}
+.hide{
+    display: none;
+}
